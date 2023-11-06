@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ms_utils.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: gclement <gclement@student.42.fr>          +#+  +:+       +#+        */
+/*   By: jlaisne <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/09 13:13:28 by jlaisne           #+#    #+#             */
-/*   Updated: 2023/04/24 16:18:53 by gclement         ###   ########.fr       */
+/*   Updated: 2023/11/06 10:06:51 by jlaisne          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,5 +115,5 @@ char	**lst_to_tab(t_env **lst)
 		i++;
 		temp = temp->next;
 	}
-	return (tab[i] = '\0', tab);
+	return (tab[i] = NULL, tab);
 }
